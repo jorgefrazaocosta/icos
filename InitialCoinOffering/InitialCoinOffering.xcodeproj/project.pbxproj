@@ -13,7 +13,25 @@
 		CB35C8D51FFC5A4B000F4C99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB35C8D31FFC5A4B000F4C99 /* LaunchScreen.storyboard */; };
 		CB35C8E11FFC5E11000F4C99 /* UIViewController+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB35C8E01FFC5E11000F4C99 /* UIViewController+Defaults.swift */; };
 		CB35C8E51FFC5E70000F4C99 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB35C8E41FFC5E70000F4C99 /* ViewController.xib */; };
+		CB85E0E71FFD717E0088B140 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB85E0E51FFD717E0088B140 /* Alamofire.framework */; };
+		CB85E0E81FFD717E0088B140 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB85E0E61FFD717E0088B140 /* ObjectMapper.framework */; };
+		CB85E0EA1FFD71CB0088B140 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB85E0E51FFD717E0088B140 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB85E0EB1FFD71CB0088B140 /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB85E0E61FFD717E0088B140 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB85E0E91FFD71BB0088B140 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CB85E0EA1FFD71CB0088B140 /* Alamofire.framework in CopyFiles */,
+				CB85E0EB1FFD71CB0088B140 /* ObjectMapper.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CB35C8C71FFC5A4B000F4C99 /* InitialCoinOffering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InitialCoinOffering.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +42,8 @@
 		CB35C8D61FFC5A4B000F4C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB35C8E01FFC5E11000F4C99 /* UIViewController+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Defaults.swift"; sourceTree = "<group>"; };
 		CB35C8E41FFC5E70000F4C99 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		CB85E0E51FFD717E0088B140 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		CB85E0E61FFD717E0088B140 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = ../Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB85E0E71FFD717E0088B140 /* Alamofire.framework in Frameworks */,
+				CB85E0E81FFD717E0088B140 /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +64,7 @@
 			children = (
 				CB35C8C91FFC5A4B000F4C99 /* InitialCoinOffering */,
 				CB35C8C81FFC5A4B000F4C99 /* Products */,
+				CB85E0E41FFD717E0088B140 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +130,15 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		CB85E0E41FFD717E0088B140 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB85E0E51FFD717E0088B140 /* Alamofire.framework */,
+				CB85E0E61FFD717E0088B140 /* ObjectMapper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,6 +149,8 @@
 				CB35C8C31FFC5A4B000F4C99 /* Sources */,
 				CB35C8C41FFC5A4B000F4C99 /* Frameworks */,
 				CB35C8C51FFC5A4B000F4C99 /* Resources */,
+				CB85E0E31FFD712F0088B140 /* ShellScript */,
+				CB85E0E91FFD71BB0088B140 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -173,6 +207,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CB85E0E31FFD712F0088B140 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/ObjectMapper.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB35C8C31FFC5A4B000F4C99 /* Sources */ = {
@@ -312,6 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E7BQ53ZKZN;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
 				INFOPLIST_FILE = "$(SRCROOT)/InitialCoinOffering/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lambo.InitialCoinOffering;
@@ -327,6 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E7BQ53ZKZN;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
 				INFOPLIST_FILE = "$(SRCROOT)/InitialCoinOffering/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lambo.InitialCoinOffering;

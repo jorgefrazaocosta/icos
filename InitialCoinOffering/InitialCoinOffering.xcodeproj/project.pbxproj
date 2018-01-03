@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		CB35C8CB1FFC5A4B000F4C99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB35C8CA1FFC5A4B000F4C99 /* AppDelegate.swift */; };
 		CB35C8CD1FFC5A4B000F4C99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB35C8CC1FFC5A4B000F4C99 /* ViewController.swift */; };
-		CB35C8D01FFC5A4B000F4C99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB35C8CE1FFC5A4B000F4C99 /* Main.storyboard */; };
 		CB35C8D21FFC5A4B000F4C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB35C8D11FFC5A4B000F4C99 /* Assets.xcassets */; };
 		CB35C8D51FFC5A4B000F4C99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB35C8D31FFC5A4B000F4C99 /* LaunchScreen.storyboard */; };
+		CB35C8E11FFC5E11000F4C99 /* UIViewController+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB35C8E01FFC5E11000F4C99 /* UIViewController+Defaults.swift */; };
+		CB35C8E51FFC5E70000F4C99 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB35C8E41FFC5E70000F4C99 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB35C8C71FFC5A4B000F4C99 /* InitialCoinOffering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InitialCoinOffering.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB35C8CA1FFC5A4B000F4C99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB35C8CC1FFC5A4B000F4C99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB35C8CF1FFC5A4B000F4C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB35C8D11FFC5A4B000F4C99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB35C8D41FFC5A4B000F4C99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB35C8D61FFC5A4B000F4C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB35C8E01FFC5E11000F4C99 /* UIViewController+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Defaults.swift"; sourceTree = "<group>"; };
+		CB35C8E41FFC5E70000F4C99 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,55 @@
 		CB35C8C91FFC5A4B000F4C99 /* InitialCoinOffering */ = {
 			isa = PBXGroup;
 			children = (
-				CB35C8CA1FFC5A4B000F4C99 /* AppDelegate.swift */,
-				CB35C8CC1FFC5A4B000F4C99 /* ViewController.swift */,
-				CB35C8CE1FFC5A4B000F4C99 /* Main.storyboard */,
-				CB35C8D11FFC5A4B000F4C99 /* Assets.xcassets */,
-				CB35C8D31FFC5A4B000F4C99 /* LaunchScreen.storyboard */,
-				CB35C8D61FFC5A4B000F4C99 /* Info.plist */,
+				CB35C8DE1FFC5DFA000F4C99 /* Extensions */,
+				CB35C8DC1FFC5BEC000F4C99 /* Support Files */,
+				CB35C8E21FFC5E3E000F4C99 /* ViewControllers */,
 			);
 			path = InitialCoinOffering;
+			sourceTree = "<group>";
+		};
+		CB35C8DC1FFC5BEC000F4C99 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB35C8CA1FFC5A4B000F4C99 /* AppDelegate.swift */,
+				CB35C8D11FFC5A4B000F4C99 /* Assets.xcassets */,
+				CB35C8D61FFC5A4B000F4C99 /* Info.plist */,
+				CB35C8D31FFC5A4B000F4C99 /* LaunchScreen.storyboard */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		CB35C8DE1FFC5DFA000F4C99 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB35C8DF1FFC5DFF000F4C99 /* ViewController */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CB35C8DF1FFC5DFF000F4C99 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CB35C8E01FFC5E11000F4C99 /* UIViewController+Defaults.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CB35C8E21FFC5E3E000F4C99 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB35C8E31FFC5E4B000F4C99 /* Main */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CB35C8E31FFC5E4B000F4C99 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CB35C8CC1FFC5A4B000F4C99 /* ViewController.swift */,
+				CB35C8E41FFC5E70000F4C99 /* ViewController.xib */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +167,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB35C8D51FFC5A4B000F4C99 /* LaunchScreen.storyboard in Resources */,
+				CB35C8E51FFC5E70000F4C99 /* ViewController.xib in Resources */,
 				CB35C8D21FFC5A4B000F4C99 /* Assets.xcassets in Resources */,
-				CB35C8D01FFC5A4B000F4C99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,20 +181,13 @@
 			files = (
 				CB35C8CD1FFC5A4B000F4C99 /* ViewController.swift in Sources */,
 				CB35C8CB1FFC5A4B000F4C99 /* AppDelegate.swift in Sources */,
+				CB35C8E11FFC5E11000F4C99 /* UIViewController+Defaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CB35C8CE1FFC5A4B000F4C99 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB35C8CF1FFC5A4B000F4C99 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CB35C8D31FFC5A4B000F4C99 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -276,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E7BQ53ZKZN;
-				INFOPLIST_FILE = InitialCoinOffering/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/InitialCoinOffering/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lambo.InitialCoinOffering;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +327,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E7BQ53ZKZN;
-				INFOPLIST_FILE = InitialCoinOffering/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/InitialCoinOffering/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lambo.InitialCoinOffering;
 				PRODUCT_NAME = "$(TARGET_NAME)";

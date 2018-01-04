@@ -13,6 +13,8 @@
 		CB35C8D51FFC5A4B000F4C99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB35C8D31FFC5A4B000F4C99 /* LaunchScreen.storyboard */; };
 		CB35C8E11FFC5E11000F4C99 /* UIViewController+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB35C8E01FFC5E11000F4C99 /* UIViewController+Defaults.swift */; };
 		CB35C8E51FFC5E70000F4C99 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB35C8E41FFC5E70000F4C99 /* ViewController.xib */; };
+		CB4467971FFDA25D004EBC9C /* ICO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4467961FFDA25D004EBC9C /* ICO.swift */; };
+		CB4467991FFDA265004EBC9C /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4467981FFDA265004EBC9C /* Review.swift */; };
 		CB85E0E71FFD717E0088B140 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB85E0E51FFD717E0088B140 /* Alamofire.framework */; };
 		CB85E0E81FFD717E0088B140 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB85E0E61FFD717E0088B140 /* ObjectMapper.framework */; };
 		CB85E0EA1FFD71CB0088B140 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB85E0E51FFD717E0088B140 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -42,6 +44,8 @@
 		CB35C8D61FFC5A4B000F4C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB35C8E01FFC5E11000F4C99 /* UIViewController+Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Defaults.swift"; sourceTree = "<group>"; };
 		CB35C8E41FFC5E70000F4C99 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		CB4467961FFDA25D004EBC9C /* ICO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICO.swift; sourceTree = "<group>"; };
+		CB4467981FFDA265004EBC9C /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		CB85E0E51FFD717E0088B140 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		CB85E0E61FFD717E0088B140 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = ../Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				CB35C8DE1FFC5DFA000F4C99 /* Extensions */,
+				CB4467931FFDA171004EBC9C /* Model */,
 				CB35C8DC1FFC5BEC000F4C99 /* Support Files */,
 				CB35C8E21FFC5E3E000F4C99 /* ViewControllers */,
 			);
@@ -128,6 +133,31 @@
 				CB35C8E41FFC5E70000F4C99 /* ViewController.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		CB4467931FFDA171004EBC9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB4467941FFDA19C004EBC9C /* ICO */,
+				CB4467951FFDA1E4004EBC9C /* Review */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB4467941FFDA19C004EBC9C /* ICO */ = {
+			isa = PBXGroup;
+			children = (
+				CB4467961FFDA25D004EBC9C /* ICO.swift */,
+			);
+			path = ICO;
+			sourceTree = "<group>";
+		};
+		CB4467951FFDA1E4004EBC9C /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				CB4467981FFDA265004EBC9C /* Review.swift */,
+			);
+			path = Review;
 			sourceTree = "<group>";
 		};
 		CB85E0E41FFD717E0088B140 /* Frameworks */ = {
@@ -231,9 +261,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB4467991FFDA265004EBC9C /* Review.swift in Sources */,
 				CB35C8CD1FFC5A4B000F4C99 /* ViewController.swift in Sources */,
 				CB35C8CB1FFC5A4B000F4C99 /* AppDelegate.swift in Sources */,
 				CB35C8E11FFC5E11000F4C99 /* UIViewController+Defaults.swift in Sources */,
+				CB4467971FFDA25D004EBC9C /* ICO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

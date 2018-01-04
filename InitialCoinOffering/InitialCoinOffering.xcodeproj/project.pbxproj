@@ -15,22 +15,27 @@
 		CB35C8E51FFC5E70000F4C99 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB35C8E41FFC5E70000F4C99 /* ViewController.xib */; };
 		CB4467971FFDA25D004EBC9C /* ICO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4467961FFDA25D004EBC9C /* ICO.swift */; };
 		CB4467991FFDA265004EBC9C /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4467981FFDA265004EBC9C /* Review.swift */; };
+		CB5AE67A1FFDAA2C004B832E /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5AE6791FFDAA2C004B832E /* AlamofireObjectMapper.framework */; };
+		CB5AE67B1FFDAA56004B832E /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5AE6791FFDAA2C004B832E /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB5AE6801FFDAECC004B832E /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5AE67F1FFDAECC004B832E /* DateFormatter.swift */; };
 		CB85E0E71FFD717E0088B140 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB85E0E51FFD717E0088B140 /* Alamofire.framework */; };
 		CB85E0E81FFD717E0088B140 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB85E0E61FFD717E0088B140 /* ObjectMapper.framework */; };
-		CB85E0EA1FFD71CB0088B140 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB85E0E51FFD717E0088B140 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CB85E0EB1FFD71CB0088B140 /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB85E0E61FFD717E0088B140 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB85E0EA1FFD71CB0088B140 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB85E0E51FFD717E0088B140 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB85E0EB1FFD71CB0088B140 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB85E0E61FFD717E0088B140 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CB85E0E91FFD71BB0088B140 /* CopyFiles */ = {
+		CB85E0E91FFD71BB0088B140 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CB85E0EA1FFD71CB0088B140 /* Alamofire.framework in CopyFiles */,
-				CB85E0EB1FFD71CB0088B140 /* ObjectMapper.framework in CopyFiles */,
+				CB5AE67B1FFDAA56004B832E /* AlamofireObjectMapper.framework in Embed Frameworks */,
+				CB85E0EA1FFD71CB0088B140 /* Alamofire.framework in Embed Frameworks */,
+				CB85E0EB1FFD71CB0088B140 /* ObjectMapper.framework in Embed Frameworks */,
 			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -46,6 +51,8 @@
 		CB35C8E41FFC5E70000F4C99 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		CB4467961FFDA25D004EBC9C /* ICO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICO.swift; sourceTree = "<group>"; };
 		CB4467981FFDA265004EBC9C /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		CB5AE6791FFDAA2C004B832E /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = ../Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
+		CB5AE67F1FFDAECC004B832E /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		CB85E0E51FFD717E0088B140 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		CB85E0E61FFD717E0088B140 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = ../Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +64,7 @@
 			files = (
 				CB85E0E71FFD717E0088B140 /* Alamofire.framework in Frameworks */,
 				CB85E0E81FFD717E0088B140 /* ObjectMapper.framework in Frameworks */,
+				CB5AE67A1FFDAA2C004B832E /* AlamofireObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +91,7 @@
 		CB35C8C91FFC5A4B000F4C99 /* InitialCoinOffering */ = {
 			isa = PBXGroup;
 			children = (
+				CB5AE67D1FFDAEB6004B832E /* Components */,
 				CB35C8DE1FFC5DFA000F4C99 /* Extensions */,
 				CB4467931FFDA171004EBC9C /* Model */,
 				CB35C8DC1FFC5BEC000F4C99 /* Support Files */,
@@ -160,9 +169,26 @@
 			path = Review;
 			sourceTree = "<group>";
 		};
+		CB5AE67D1FFDAEB6004B832E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CB5AE67E1FFDAEC0004B832E /* DateFormatter */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CB5AE67E1FFDAEC0004B832E /* DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				CB5AE67F1FFDAECC004B832E /* DateFormatter.swift */,
+			);
+			path = DateFormatter;
+			sourceTree = "<group>";
+		};
 		CB85E0E41FFD717E0088B140 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB5AE6791FFDAA2C004B832E /* AlamofireObjectMapper.framework */,
 				CB85E0E51FFD717E0088B140 /* Alamofire.framework */,
 				CB85E0E61FFD717E0088B140 /* ObjectMapper.framework */,
 			);
@@ -179,8 +205,8 @@
 				CB35C8C31FFC5A4B000F4C99 /* Sources */,
 				CB35C8C41FFC5A4B000F4C99 /* Frameworks */,
 				CB35C8C51FFC5A4B000F4C99 /* Resources */,
-				CB85E0E31FFD712F0088B140 /* ShellScript */,
-				CB85E0E91FFD71BB0088B140 /* CopyFiles */,
+				CB85E0E31FFD712F0088B140 /* Carthage */,
+				CB85E0E91FFD71BB0088B140 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,7 +265,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CB85E0E31FFD712F0088B140 /* ShellScript */ = {
+		CB85E0E31FFD712F0088B140 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -247,7 +273,9 @@
 			inputPaths = (
 				"$(SRCROOT)/../Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/../Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/AlamofireObjectMapper.framework",
 			);
+			name = Carthage;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB5AE6801FFDAECC004B832E /* DateFormatter.swift in Sources */,
 				CB4467991FFDA265004EBC9C /* Review.swift in Sources */,
 				CB35C8CD1FFC5A4B000F4C99 /* ViewController.swift in Sources */,
 				CB35C8CB1FFC5A4B000F4C99 /* AppDelegate.swift in Sources */,

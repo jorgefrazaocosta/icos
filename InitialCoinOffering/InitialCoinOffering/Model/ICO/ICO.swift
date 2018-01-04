@@ -36,10 +36,12 @@ class ICO: Mappable {
     
     func mapping(map: Map) {
         
+        let dateFormatter = DateFormatter.serverFormat()
+        
         self.id                 <- map["id"]
         self.name               <- map["name"]
         self.shortname          <- map["shortname"]
-        self.crowdsaleDate      <- (map["crowdsale_date"], DateTransform())
+        self.crowdsaleDate      <- (map["crowdsale_date"], DateFormatterTransform(dateFormatter: dateFormatter))
         self.tokenPrice         <- map["token_price"]
         self.reviews            <- map["evaluation"]
         self.totalTokens        <- map["total_tokens"]

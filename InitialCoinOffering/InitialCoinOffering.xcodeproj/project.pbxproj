@@ -18,6 +18,8 @@
 		CB5AE67A1FFDAA2C004B832E /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5AE6791FFDAA2C004B832E /* AlamofireObjectMapper.framework */; };
 		CB5AE67B1FFDAA56004B832E /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB5AE6791FFDAA2C004B832E /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CB5AE6801FFDAECC004B832E /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5AE67F1FFDAECC004B832E /* DateFormatter.swift */; };
+		CB5AE68C1FFDB9EE004B832E /* ICOCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5AE68A1FFDB9EE004B832E /* ICOCell.swift */; };
+		CB5AE68D1FFDB9EE004B832E /* ICOCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB5AE68B1FFDB9EE004B832E /* ICOCell.xib */; };
 		CB85E0E71FFD717E0088B140 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB85E0E51FFD717E0088B140 /* Alamofire.framework */; };
 		CB85E0E81FFD717E0088B140 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB85E0E61FFD717E0088B140 /* ObjectMapper.framework */; };
 		CB85E0EA1FFD71CB0088B140 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB85E0E51FFD717E0088B140 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -53,6 +55,8 @@
 		CB4467981FFDA265004EBC9C /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		CB5AE6791FFDAA2C004B832E /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = ../Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
 		CB5AE67F1FFDAECC004B832E /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		CB5AE68A1FFDB9EE004B832E /* ICOCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICOCell.swift; sourceTree = "<group>"; };
+		CB5AE68B1FFDB9EE004B832E /* ICOCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICOCell.xib; sourceTree = "<group>"; };
 		CB85E0E51FFD717E0088B140 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		CB85E0E61FFD717E0088B140 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = ../Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +100,7 @@
 				CB4467931FFDA171004EBC9C /* Model */,
 				CB35C8DC1FFC5BEC000F4C99 /* Support Files */,
 				CB35C8E21FFC5E3E000F4C99 /* ViewControllers */,
+				CB5AE6811FFDB1CF004B832E /* Views */,
 			);
 			path = InitialCoinOffering;
 			sourceTree = "<group>";
@@ -185,6 +190,47 @@
 			path = DateFormatter;
 			sourceTree = "<group>";
 		};
+		CB5AE6811FFDB1CF004B832E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB5AE6821FFDB1DA004B832E /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB5AE6821FFDB1DA004B832E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CB5AE6831FFDB1DE004B832E /* ICOCell */,
+				CB5AE6841FFDB1E8004B832E /* InfoCell */,
+				CB5AE6851FFDB1F3004B832E /* ReviewerCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CB5AE6831FFDB1DE004B832E /* ICOCell */ = {
+			isa = PBXGroup;
+			children = (
+				CB5AE68A1FFDB9EE004B832E /* ICOCell.swift */,
+				CB5AE68B1FFDB9EE004B832E /* ICOCell.xib */,
+			);
+			path = ICOCell;
+			sourceTree = "<group>";
+		};
+		CB5AE6841FFDB1E8004B832E /* InfoCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = InfoCell;
+			sourceTree = "<group>";
+		};
+		CB5AE6851FFDB1F3004B832E /* ReviewerCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReviewerCell;
+			sourceTree = "<group>";
+		};
 		CB85E0E41FFD717E0088B140 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +305,7 @@
 				CB35C8D51FFC5A4B000F4C99 /* LaunchScreen.storyboard in Resources */,
 				CB35C8E51FFC5E70000F4C99 /* ViewController.xib in Resources */,
 				CB35C8D21FFC5A4B000F4C99 /* Assets.xcassets in Resources */,
+				CB5AE68D1FFDB9EE004B832E /* ICOCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +340,7 @@
 				CB4467991FFDA265004EBC9C /* Review.swift in Sources */,
 				CB35C8CD1FFC5A4B000F4C99 /* ViewController.swift in Sources */,
 				CB35C8CB1FFC5A4B000F4C99 /* AppDelegate.swift in Sources */,
+				CB5AE68C1FFDB9EE004B832E /* ICOCell.swift in Sources */,
 				CB35C8E11FFC5E11000F4C99 /* UIViewController+Defaults.swift in Sources */,
 				CB4467971FFDA25D004EBC9C /* ICO.swift in Sources */,
 			);
